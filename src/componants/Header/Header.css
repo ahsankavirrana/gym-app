@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Diplomata+SC&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: whitesmoke;
+}
+
+.logo span
+{
+    font-size: 20px;
+    font-family: 'Diplomata SC', cursive;
+}
+
+.logo h4{
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    margin: 0;
+}
+
+.header-menu{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: whitesmoke;
+}
+
+.header-menu>li:hover{
+    color: var(--orange);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .header > :nth-child(2){
+        position: fixed;
+        right: 2rem;
+        z-index: 99;
+    }
+    .header-menu{
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+    }
+    
+}
